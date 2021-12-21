@@ -2,8 +2,8 @@
 
 ## Contacts:
 
-* **Phone:** +79165646117
-* **Mail:** iliya-kuznetsov@mail.ru
+* **Phone:** +79175646117
+* **E-mail:** iliya-kuznetsov@mail.ru
 * **Discord:** Iliya_Kuznetsov(@iliyakz)
 * **Github:** IliyaKz
 
@@ -14,7 +14,7 @@ My strengths include quick learning, reliability, responsibility, as well as the
 ## Skills:
 
 * Python (*basic*)
-* C ++ (*basic*)
+* C++ (*basic*)
 * Git
 * Photoshop
 
