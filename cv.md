@@ -37,7 +37,7 @@ Nothing yet
     * RTU MIREA, master's degree in "Intelligent information systems and technologies" (in progress)
 
 * Courses
-    * RS Schools Course “JavaScript / Front-end. Stage 0 "(in progress)
+    * RS Schools Course "JavaScript / Front-end. Stage 0"(in progress)
 
 ## Languages:
 * Russian (*native*)
