@@ -28,10 +28,12 @@ main {
 .cv-sidebar {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 .cv-body {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 .project-container {
     display: flex;
@@ -98,6 +100,20 @@ i.fab {
 .date {
     font-size: 32px;
     align-self: center;
+}
+.me {
+    flex-basis: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.me-content {
+    text-align: center;
+    align-self: center;
+}
+h1 {
+    font-size: 48px;
+    margin: 10px;
+    border-bottom: 5px solid var(--bright-blue);
 }
 
 
