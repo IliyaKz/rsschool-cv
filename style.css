@@ -14,10 +14,10 @@ body {
 main {
     max-width: 1024px;
     margin: 20px auto;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 24px;
     background-color: var(--light-grey-blue);
     box-shadow: 1px 10px 100px 10px rgba(0, 0, 0, 0.5);
 }
@@ -34,4 +34,42 @@ main {
 }
 .project-container {
     display: flex;
+}
+.header {
+    background-color: var(--light-blue);
+    margin-bottom: 20px;
+    padding: 0;
+}
+.menu {
+    padding: 0;
+    margin: 0;
+}
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+.menu-items {
+    list-style: none; 
+    margin: 0;
+    transition: .5s;
+}
+.menu-items-link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0 20px;
+    line-height: 80px;
+    transition: .5s;
+}
+.menu-items:active {
+    background-color: var(--bright-blue);
+    flex-grow: 1;
+}
+.menu-items-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+.menu-items-link:active {
+    color: #f78606;
 }
