@@ -1,6 +1,14 @@
 * {
     box-sizing: border-box;
 }
+@font-face {
+    font-family: RobotoSlab;
+    src: url(./assets/fonts/RobotoSlab-Regular.ttf);
+}
+@font-face {
+    font-family: Karla;
+    src: url(/assets/fonts/Karla-Regular.ttf);
+}
 :root {
     --dark-grey-blue: #272c3d;
     --light-grey-blue: #e1f0f5;
@@ -15,12 +23,13 @@ body {
     background-color: var(--dark-grey-blue);
 }
 main {
-    max-width: 1024px;
+    max-width: 1096px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 24px;
+    font-family: RobotoSlab;
     background-color: var(--light-grey-blue);
     box-shadow: 1px 10px 100px 10px rgba(0, 0, 0, 0.5);
 }
@@ -64,6 +73,7 @@ main {
     margin: 0;
     padding: 0 20px;
     line-height: 80px;
+    font-family: Karla;
     transition: .5s;
 }
 .menu-items:active {
@@ -106,6 +116,7 @@ a i.fab {
 .date {
     font-size: 32px;
     align-self: center;
+    font-family: Karla;
 }
 .me {
     flex-basis: 300px;
@@ -116,10 +127,14 @@ a i.fab {
     text-align: center;
     align-self: center;
 }
-h1 {
+.me-header {
     font-size: 48px;
     margin: 10px;
     border-bottom: 5px solid var(--bright-blue);
+    font-family: Karla;
+}
+.me-subheader, .main-header, .main-subheader, .sidebar-header {
+    font-family: Karla;
 }
 .contacts-list {
     list-style: none;
