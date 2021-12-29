@@ -35,9 +35,7 @@ main {
     flex-direction: column;
     padding: 10px;
 }
-.project-container {
-    display: flex;
-}
+
 .header {
     background-color: var(--light-blue);
     margin-bottom: 20px;
@@ -91,11 +89,15 @@ main {
     align-items: baseline;
     padding: 20px;
 }
-i.fab {
+i.fab, i.fas {
     color: #000;
-    font-size: 48px;
+    font-size: 24px;
     text-align: center;
     margin: 10px;
+}
+a i.fab {
+    color: #000;
+    font-size: 48px;
 }
 .date {
     font-size: 32px;
@@ -115,6 +117,34 @@ h1 {
     margin: 10px;
     border-bottom: 5px solid var(--bright-blue);
 }
-
+.contacts-list {
+    list-style: none;
+    padding-inline-start: 10px;
+    line-height: 10px;
+}
+.skills{
+    flex-grow: 1;
+}
+.skills-list {
+    line-height: 60px;
+}
+.languages{
+    flex-grow: 1;
+}
+.languages-list {
+    line-height: 60px;
+}
+.education-list {
+    line-height: 40px;
+}
+.code-example-content {
+    margin: 5px;
+}
+.about-me{
+    line-height: 30px;
+}
+.my-projects-content{
+    line-height: 30px;
+}
 
 
