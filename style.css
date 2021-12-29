@@ -7,6 +7,9 @@
     --light-blue: #8ff0f7;
     --bright-blue: #2137ff;
 }
+html {
+    scroll-behavior: smooth; 
+  }
 body {
     margin: 0 auto;
     background-color: var(--dark-grey-blue);
@@ -66,6 +69,7 @@ main {
 .menu-items:active {
     background-color: var(--bright-blue);
     flex-grow: 1;
+    text-align: center;
 }
 .menu-items-link:hover {
     text-decoration: underline;
