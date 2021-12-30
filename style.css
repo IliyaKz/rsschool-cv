@@ -5,10 +5,6 @@
     font-family: RobotoSlab;
     src: url(./assets/fonts/RobotoSlab-Regular.ttf);
 }
-@font-face {
-    font-family: Karla;
-    src: url(/assets/fonts/Karla-Regular.ttf);
-}
 :root {
     --dark-grey-blue: #272c3d;
     --light-grey-blue: #e1f0f5;
@@ -159,15 +155,18 @@ a i.fab:active {
     font-size: 52px;
     margin: 10px;
     border-bottom: 5px solid var(--bright-blue);
-    font-family: Karla;
+    font-family: Fira Sans;
     color: #000;
+    letter-spacing: 6px;
 }
 .me-header, .me-subheader {
     text-transform: uppercase;
+}
+.me-subheader {
     letter-spacing: 5px;
 }
 .me-subheader, .main-header, .main-subheader, .sidebar-header {
-    font-family: Karla;
+    font-family: Fira Sans;
     letter-spacing: 3px;
 }
 .me-subheader, .main-header, .main-subheader {
