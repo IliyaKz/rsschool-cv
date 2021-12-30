@@ -12,8 +12,10 @@
 :root {
     --dark-grey-blue: #272c3d;
     --light-grey-blue: #e1f0f5;
-    --light-blue: #8ff0f7;
+    --light-blue: #85aefc;
     --bright-blue: #2137ff;
+    --grey-blue: #334864;
+    --text-color: #2b393d;
 }
 html {
     scroll-behavior: smooth; 
@@ -32,25 +34,28 @@ main {
     font-family: RobotoSlab;
     background-color: var(--light-grey-blue);
     box-shadow: 1px 10px 100px 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: var(--text-color);
 }
 .cv {
     display: flex;
-    padding: 20px;
+    /* padding: 20px; */
 }
 .cv-sidebar {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px 20px 20px 0;
+    background-color: var(--grey-blue);
+    color: var(--light-grey-blue);
 }
 .cv-body {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px 0;
 }
 
 .header {
-    background-color: var(--light-blue);
-    margin-bottom: 20px;
+    background-color: var(--light-blue);    
     padding: 0;
 }
 .menu {
@@ -73,8 +78,10 @@ main {
     margin: 0;
     padding: 0 20px;
     line-height: 80px;
-    font-family: Karla;
+    font-family: RobotoSlab;
+    font-size: 28px;
     transition: .5s;
+    color: #000;
 }
 .menu-items:active {
     background-color: var(--bright-blue);
@@ -89,7 +96,8 @@ main {
     color: #f78606;
 }
 .my-photo{
-    margin-left: 30px;
+    margin-left: 25px;
+    margin-right: 5px;
 }
 .photo {
     border: 5px solid var(--bright-blue);
@@ -102,9 +110,10 @@ main {
     justify-content: space-around;
     align-items: baseline;
     padding: 20px;
+
 }
 i.fab, i.fas {
-    color: #000;
+    color: var(--light-grey-blue);
     font-size: 24px;
     text-align: center;
     margin: 10px;
@@ -113,13 +122,27 @@ a i.fab {
     color: #000;
     font-size: 48px;
 }
+.git-link:hover {
+    background-color: var(--bright-blue);
+    border-radius: 5px;
+}
+.course-link:hover {
+    background-color: var(--bright-blue);
+    border-radius: 5px;
+}
+a i.fab:hover {
+    color: #fff;
+}
+a i.fab:active {
+    color: #f78606;
+}
 .date {
     font-size: 32px;
     align-self: center;
     font-family: Karla;
 }
 .me {
-    flex-basis: 300px;
+    flex-basis: 316px;
     display: flex;
     justify-content: space-around;
 }
@@ -128,27 +151,47 @@ a i.fab {
     align-self: center;
 }
 .me-header {
-    font-size: 48px;
+    font-size: 52px;
     margin: 10px;
     border-bottom: 5px solid var(--bright-blue);
     font-family: Karla;
+    color: #000;
+}
+.me-header, .me-subheader {
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 .me-subheader, .main-header, .main-subheader, .sidebar-header {
     font-family: Karla;
+    letter-spacing: 3px;
+}
+.me-subheader, .main-header, .main-subheader {
+    color: #000;
 }
 .contacts-list {
     list-style: none;
     padding-inline-start: 10px;
     line-height: 10px;
+    font-weight: normal;
 }
 .skills{
     flex-grow: 1;
+    margin-top: 40px;
 }
 .skills-list {
     line-height: 60px;
+   
+}
+.skills-content, .languages-content {
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+.about-me-content, .education-content, .my-projects-content, .code-example-content {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .languages{
-    flex-grow: 1;
+    flex-grow: 2;
 }
 .languages-list {
     line-height: 60px;
@@ -157,7 +200,13 @@ a i.fab {
     line-height: 40px;
 }
 .code-example-content {
-    margin: 5px;
+    margin: 5px 40px;
+    background-color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+    border-radius: 10px;
+}
+pre {
+    margin: 0;
 }
 .about-me{
     line-height: 30px;
@@ -165,5 +214,16 @@ a i.fab {
 .my-projects-content{
     line-height: 30px;
 }
-
+.header-left {
+    background: linear-gradient(to right, var(--bright-blue), var(--grey-blue));
+    line-height: 40px; 
+    padding-left: 20px;
+    text-align: center;
+}
+.header-right {
+    background: linear-gradient(to right, var(--bright-blue), var(--light-grey-blue));
+    line-height: 40px;
+    padding-left: 20px;
+    text-align: center;
+}
 
