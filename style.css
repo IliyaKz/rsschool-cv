@@ -177,6 +177,18 @@ a i.fab:active {
     padding-inline-start: 10px;
     line-height: 10px;
     font-weight: normal;
+    
+}
+.contacts-list-items a {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+.contacts-list-items a:hover {
+    text-decoration: underline;
+}
+.contacts-list-items a:active {
+    color: #f78606;
 }
 .skills{
     flex-grow: 1;
