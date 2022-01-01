@@ -29,67 +29,66 @@ main {
     justify-content: space-between;
     font-size: 24px;
     font-family: RobotoSlab;
-    background-color: var(--light-grey-blue);
-    box-shadow: 1px 10px 100px 10px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     color: var(--text-color);
+    background-color: var(--light-grey-blue);
+    box-shadow: 1px 10px 100px 10px rgba(0, 0, 0, 0.5);
 }
 .cv {
-    display: flex;
     max-width: 1096px;
+    display: flex;
 }
 .cv-sidebar {
+    width: 33%;
+    padding: 20px 20px 20px 0;
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 20px 0;
-    background-color: var(--grey-blue);
     color: var(--light-grey-blue);
-    width: 33%;
+    background-color: var(--grey-blue);
 }
 .cv-body {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
     width: 67%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;    
 }
-
-.header {
-    background-color: var(--light-blue);    
+.header { 
+    width: 100%;   
     padding: 0;
-    width: 100%;
+    background-color: var(--light-blue);
 }
 .menu {
     padding: 0;
     margin: 0;
 }
 .menu-list {
-    display: flex;
-    justify-content: space-around;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: space-around;
 }
 .menu-items {
-    list-style: none; 
     margin: 0;
+    list-style: none; 
 }
 .menu-items-link {
-    text-decoration: none;
     margin: 0;
     padding: 0 20px;
     line-height: 80px;
-    font-family: RobotoSlab;
     font-size: 28px;
-    transition: .5s;
+    font-family: RobotoSlab;
     color: #000;
+    text-decoration: none;
+    transition: .5s;
 }
 .menu-items:active {
-    background-color: var(--bright-blue);
     flex-grow: 1;
     text-align: center;
+    background-color: var(--bright-blue);
 }
 .menu-items-link:hover {
-    text-decoration: underline;
     color: #fff;
+    text-decoration: underline;
 }
 .menu-items-link:active {
     color: #f78606;
@@ -99,70 +98,29 @@ main {
     margin-right: 5px;
 }
 .photo {
+    margin: 0;
     border: 5px solid var(--bright-blue);
     border-radius: 50%;
-    margin: 0;
-}
-.footer {
-    background-color: var(--light-blue);
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 20px;
-    width: 100%;
-
-}
-i.fab, i.fas {
-    color: var(--light-grey-blue);
-    font-size: 24px;
-    text-align: center;
-    margin: 10px;
-}
-a i.fab {
-    color: #000;
-    font-size: 48px;
-    transition: .5s
-}
-.git-link:hover, .course-link:hover {
-    background-color: var(--bright-blue);
-    border-radius: 5px;
-}
-.git-link, .course-link{
-    transition: .5s
-}
-a i.fab:hover {
-    color: #fff;
-}
-a i.fab:active {
-    color: #f78606;
-}
-.date {
-    font-size: 32px;
-    align-self: center;
-    font-family: Karla;
 }
 .me {
-    flex-basis: 316px;
     display: flex;
     justify-content: space-around;
+    flex-basis: 316px;
 }
 .me-content {
     text-align: center;
     align-self: center;
 }
 .me-header {
-    font-size: 52px;
     margin: 10px;
-    border-bottom: 5px solid var(--bright-blue);
+    font-size: 52px;
     font-family: Fira Sans;
     color: #000;
     letter-spacing: 6px;
+    border-bottom: 5px solid var(--bright-blue);
 }
 .me-header, .me-subheader {
     text-transform: uppercase;
-}
-.me-subheader {
-    letter-spacing: 5px;
 }
 .me-subheader, .main-header, .main-subheader, .sidebar-header {
     font-family: Fira Sans;
@@ -171,15 +129,33 @@ a i.fab:active {
 .me-subheader, .main-header, .main-subheader {
     color: #000;
 }
+.header-left {
+    padding-left: 20px;
+    line-height: 40px; 
+    text-align: center;
+    background: linear-gradient(to right, var(--bright-blue), var(--grey-blue));
+}
+.header-right {
+    padding-left: 20px;
+    line-height: 40px;
+    text-align: center;
+    background: linear-gradient(to right, var(--bright-blue), var(--light-grey-blue));
+}
+i.fab, i.fas {
+    margin: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: var(--light-grey-blue);
+}
 .contacts-list {
-    list-style: none;
     padding-inline-start: 10px;
+    list-style: none;
     line-height: 10px;
     font-weight: normal;
     
 }
 .contacts-list-items a {
-    color: #fff;
+    color: var(--light-grey-blue);
     text-decoration: none;
     transition: .5s;    
 }
@@ -190,26 +166,28 @@ a i.fab:active {
     color: #f78606;
 }
 .skills{
-    flex-grow: 1;
     margin-top: 40px;
+    flex-grow: 1;
 }
 .skills-list {
-    line-height: 60px;
-   
+    line-height: 60px;   
 }
 .skills-content, .languages-content {
     padding-left: 20px;
     letter-spacing: 2px;
-}
-.about-me-content, .education-content, .my-projects-content, .code-example-content {
-    padding-left: 20px;
-    padding-right: 20px;
 }
 .languages{
     flex-grow: 2;
 }
 .languages-list {
     line-height: 60px;
+}
+.about-me-content, .education-content, .my-projects-content, .code-example-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about-me{
+    line-height: 30px;
 }
 .education-list {
     line-height: 40px;
@@ -223,21 +201,37 @@ a i.fab:active {
 pre {
     margin: 0;
 }
-.about-me{
-    line-height: 30px;
-}
 .my-projects-content{
     line-height: 30px;
 }
-.header-left {
-    background: linear-gradient(to right, var(--bright-blue), var(--grey-blue));
-    line-height: 40px; 
-    padding-left: 20px;
-    text-align: center;
+.footer {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: var(--light-blue);
 }
-.header-right {
-    background: linear-gradient(to right, var(--bright-blue), var(--light-grey-blue));
-    line-height: 40px;
-    padding-left: 20px;
-    text-align: center;
+a i.fab {
+    font-size: 48px;
+    color: #000;
+    transition: .5s
+}
+.git-link:hover, .course-link:hover {
+    border-radius: 5px;
+    background-color: var(--bright-blue);
+}
+.git-link, .course-link{
+    transition: .5s
+}
+a i.fab:hover {
+    color: #fff;
+}
+a i.fab:active {
+    color: #f78606;
+}
+.date {
+    font-size: 32px;
+    font-family: Fira Sans;
+    align-self: center;
 }
