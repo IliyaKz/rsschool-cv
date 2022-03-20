@@ -8,27 +8,28 @@
 * **Github:** IliyaKz
 
 ## About me:
-I completed my Bachelor's degree in Electronics and Nanoelectronics, but over time I realized that I was more attracted to other areas, such as development. In addition, I have always liked visual creativity (in particular, I was engaged in digital drawing and 3D modeling), which additionally influenced the desire to engage in front-end development - and here I am.
+I completed my Bachelor's degree in Electronics and Nanoelectronics, but over time I realized that I was more attracted to other areas, such as development. In addition, I have always liked visual creativity (in particular, I was engaged in digital drawing and 3D modeling), which additionally influenced the desire to engage in front-end development.
 My strengths include quick learning, reliability, responsibility, as well as the skill of working in a team.
 
 ## Skills:
 
 * Python (*basic*)
 * C++ (*basic*)
+* HTML (*basic*)
+* CSS (*basic*)
+* JavaScript (*basic*)
 * Git
-* Photoshop
+* VS Code
+* Photoshop, ZBrush
 
 ## Sample code:
 
 ```
-function multiply (a, b) {
-return (a * b);
-}
-let product = multiply (2, 2);
+let validWord = function(dictionary, word) {
+  let re = new RegExp(`^(${dictionary.join('|')})*$`, "g");
+  return re.test(`${word}`)
+};
 ```
-
-## Experience:
-Nothing yet
 
 ## Education:
 
@@ -37,7 +38,8 @@ Nothing yet
     * RTU MIREA, master's degree in "Intelligent information systems and technologies" (in progress)
 
 * Courses
-    * RS Schools Course "JavaScript / Front-end. Stage 0"(in progress)
+    * RS Schools Course "JavaScript / Front-end. Stage 0"
+    * RS Schools Course "JavaScript / Front-end. Stage 1" (*in progress*)**
 
 ## Languages:
 * Russian (*native*)
